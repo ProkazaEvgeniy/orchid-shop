@@ -1,0 +1,281 @@
+/*===SLIDER 200-500===================================================*/
+.category_wrp{
+	height: 500px;
+	width: 1200px;
+	position: relative;
+	top: 120px;
+	margin: 0 auto;
+}
+#nature, #home, #sculpture, #art, #weapon {
+	height: 500px;
+	width: 200px;
+	display: inline;
+	float: left;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	transform-origin: 100px 0 -100px;
+	transition: 1.5s ease;
+	margin-right: 50px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+#nature_c, #nature_l, #nature_t, #nature_r {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	float: left;
+	text-align: center;
+	line-height: 750px;
+}
+#nature_c {
+	left: 0px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/nature_1.jpg) no-repeat;
+}
+#nature_l {
+	left: -200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/nature_2.jpg) no-repeat;
+	transform: rotateY(-90deg);
+	transform-origin: 100% 0;
+}
+#nature_t {
+	left: -400px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/nature_3.jpg) no-repeat;
+	transform: rotateY(180deg);
+	transform-origin: 300px 0 -100px;
+}
+#nature_r {
+	left: 200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/nature_4.jpg) no-repeat;
+	transform: rotateY(90deg);
+	transform-origin: 0 0;
+}
+#but_nature_1, #but_nature_2, #but_nature_3, #but_nature_4 {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+}
+#but_nature_1 {display: block;}
+#but_nature_2, #but_nature_3, #but_nature_4 {display: none;}
+
+/*---HOME---------------------*/
+#home_c, #home_l, #home_t, #home_r {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	float: left;
+	text-align: center;
+	line-height: 750px;
+}
+#home_c {
+	left: 0px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/home_1.jpg) no-repeat;
+}
+#home_l {
+	left: -200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/home_2.jpg) no-repeat;
+	transform: rotateY(-90deg);
+	transform-origin: 100% 0;
+}
+#home_t {
+	left: -400px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/home_3.jpg) no-repeat;
+	transform: rotateY(180deg);
+	transform-origin: 300px 0 -100px;
+}
+#home_r {
+	left: 200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/home_4.jpg) no-repeat;
+	transform: rotateY(90deg);
+	transform-origin: 0 0;
+}
+#but_home_1, #but_home_2, #but_home_3, #but_home_4 {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	left: 250px;
+	cursor: pointer;
+}
+#but_home_1 {display: block;}
+#but_home_2, #but_home_3, #but_home_4 {display: none;}
+
+/*---SCULPTURE---------------------*/
+#sculpture_c, #sculpture_l, #sculpture_t, #sculpture_r {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	float: left;
+	text-align: center;
+	line-height: 750px;
+}
+#sculpture_c {
+	left: 0px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/sculpture_1.jpg) no-repeat;
+}
+#sculpture_l {
+	left: -200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/sculpture_2.jpg) no-repeat;
+	transform: rotateY(-90deg);
+	transform-origin: 100% 0;
+}
+#sculpture_t {
+	left: -400px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/sculpture_3.jpg) no-repeat;
+	transform: rotateY(180deg);
+	transform-origin: 300px 0 -100px;
+}
+#sculpture_r {
+	left: 200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/sculpture_4.jpg) no-repeat;
+	transform: rotateY(90deg);
+	transform-origin: 0 0;
+}
+#but_sculpture_1, #but_sculpture_2, #but_sculpture_3, #but_sculpture_4 {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	left: 500px;
+	cursor: pointer;
+}
+#but_sculpture_1{display: block;}
+#but_sculpture_2, #but_sculpture_3, #but_sculpture_4{display: none;}
+
+/*---ART--------------------------------------------*/
+#art_c, #art_l, #art_t, #art_r {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	float: left;
+	text-align: center;
+	line-height: 750px;
+}
+#art_c {
+	left: 0px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/art_1.jpg) no-repeat;
+}
+#art_l {
+	left: -200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/art_2.jpg) no-repeat;
+	transform: rotateY(-90deg);
+	transform-origin: 100% 0;
+}
+#art_t {
+	left: -400px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/art_3.jpg) no-repeat;
+	transform: rotateY(180deg);
+	transform-origin: 300px 0 -100px;
+}
+#art_r {
+	left: 200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/art_4.jpg) no-repeat;
+	transform: rotateY(90deg);
+	transform-origin: 0 0;
+}
+#but_art_1, #but_art_2, #but_art_3, #but_art_4 {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	left: 750px;
+	cursor: pointer;
+}
+#but_art_1 {display: block;}
+#but_art_2, #but_art_3, #but_art_4 {display: none;}
+
+/*---WEAPON---------------------------------------------*/
+#weapon {margin-right: 0px;}
+#weapon_c, #weapon_l, #weapon_t, #weapon_r {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	float: left;
+	text-align: center;
+	line-height: 750px;
+}
+#weapon_c {
+	left: 0px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/weapon_1.jpg) no-repeat;
+}
+#weapon_l {
+	left: -200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/weapon_2.jpg) no-repeat;
+	transform: rotateY(-90deg);
+	transform-origin: 100% 0;
+}
+#weapon_t {
+	left: -400px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/weapon_3.jpg) no-repeat;
+	transform: rotateY(180deg);
+	transform-origin: 300px 0 -100px;
+}
+#weapon_r {
+	left: 200px;
+	background:
+		url(../images/bg2.png) repeat, 
+		url(../images/slide/weapon_4.jpg) no-repeat;
+	transform: rotateY(90deg);
+	transform-origin: 0 0;
+}
+#but_weapon_1, #but_weapon_2, #but_weapon_3, #but_weapon_4 {
+	height: 500px;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	left: 1000px;
+	cursor: pointer;
+}
+#but_weapon_1 {display: block;}
+#but_weapon_2, #but_weapon_3, #but_weapon_4 {display: none;}
+.s1 {
+	color: #f90;
+	background: rgba(0,0,0,0.45);
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 10%;
+}

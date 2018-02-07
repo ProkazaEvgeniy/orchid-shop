@@ -1,0 +1,12 @@
+.social_link{
+	height: 60px;
+	width: 200px;
+	margin-left: calc(50% - 100px);
+	line-height: 60px;
+}
+.link, .git, .you{
+	color: #3a3a3a;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.link:hover, .git:hover, .you:hover{color: grey;}

@@ -1,0 +1,50 @@
+/*---EXAMPLE---------------------------------------------------------------*/
+.example{
+	height: 320px;
+	width: 160px;
+	float: right;
+	position: absolute;
+	top: 100px;
+	right: 50px;
+}
+#black_green, #black_red, #black_yellow, #black_purple,
+#blue_white, #grey_dark, #ide_1 {
+	height: 30px;
+	width: 150px;
+	margin: 5px;
+	line-height: 30px;
+	font-family:  'SourceCodePro-Regular';
+	float: left;
+	cursor: move;
+	border: 1px solid $color-gray_type_1;
+	opacity: 0.8;
+	text-align: center;
+}
+#black_green{
+	background-color: black;
+	color: #48A65B;
+}
+#black_red{
+	background-color: black;
+	color: red;
+}
+#black_yellow{
+	background-color: black;
+	color: #f90;
+}
+#black_purple{
+	background-color: black;
+	color: #812991;
+}
+#blue_white{
+	background-color: blue;
+	color: white;
+}
+#grey_dark{
+	background-color: white;
+	color: grey;
+}
+#ide_1{
+	background-color: #434e56;
+	color: #fff;
+}

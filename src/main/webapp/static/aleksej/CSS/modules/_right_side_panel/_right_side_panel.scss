@@ -1,0 +1,110 @@
+/*===SIDE_PANEL=============================================*/
+.right_side_panel {
+	height: 600px;
+	width: 500px;
+	background: $color-gray_type_1;
+	position: absolute;
+	right: -500px;
+	top: 80px;
+	transition: right 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+label.btn {
+	display: block;
+	position: absolute;
+	right: 30px;
+	top: calc(50% - 30px);
+	cursor: pointer;
+	width: 60px;
+	border-radius: 30px;
+	background: $color-gray_main_dark;
+	color: $color-turquoise;
+	line-height: 60px;
+	font-size: 25px;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	cursor: pointer;
+	transition: all 400ms cubic-bezier(0.17,0.04,0.03,0.94);
+	z-index: 10
+}
+label.btn:hover {box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)}
+label.btn:after {
+	content: '\f053';
+	font: normal 25px/1 FontAwesome;
+	text-decoration: inherit;
+}
+.open:checked ~ .right_side_panel {right: 0}
+.open:checked ~ label.btn {right: 500px}
+.open:checked + label.btn {color: $color-yellow;}
+.open:checked + label.btn:after {
+	content: '\f054';
+	font: normal 25px/1 FontAwesome;
+}
+
+.display_web, .display_sketch {
+	height: 300px;
+	width: 500px;
+	background: $color-gray_type_2;
+	float: left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-bottom: 10px;
+}
+#sketch_1, #sketch_2, #sketch_3,
+#sketch_4, #sketch_5, #sketch_6 {
+	height: 300px;
+	width: 500px;
+	border: none;
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+/*---БЛОК КНОПОК ПРОСМОТРОВ-------------------------------------------*/
+.button_box_view {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	float: left;
+	background-color: $color-gray_type_1;
+	border-top: 1px solid $color-gray_dark;
+	border-bottom: 1px solid $color-gray_dark;
+}
+/*---КНОПКА ПРОСМОТРА 3D---------------------------------------------------*/
+#btn_sketch_1, #btn_sketch_2, #btn_sketch_3, #btn_sketch_4, #btn_sketch_5, #btn_sketch_6 {
+	width: 50px;
+	background: $color-gray_dark;
+	color: $color-gray_text;
+	text-decoration: none;
+	text-align: center;
+	padding: 4px 15px;
+	margin: 5px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	position: relative;
+	right: 0px;
+	top: 0px;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-left: 2px solid $color-gray_dark;
+	border-right: 2px solid $color-gray_dark;
+}
+#btn_sketch_1:hover, #btn_sketch_2:hover, #btn_sketch_3:hover, #btn_sketch_4:hover, 
+#btn_sketch_5:hover, #btn_sketch_6:hover {
+	color: $color-green;
+	text-decoration: none;
+	border-left: 2px solid $color-green;
+	border-right: 2px solid $color-green;
+}
+#btn_sketch_1:active, #btn_sketch_2:active, #btn_sketch_3:active, #btn_sketch_4:active, 
+#btn_sketch_5:active, #btn_sketch_6:active {
+	color: $color-yellow;
+}

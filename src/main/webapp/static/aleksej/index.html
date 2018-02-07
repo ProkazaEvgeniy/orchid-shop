@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+<!--ДЛЯ SEO-->
+	<meta name="keywords" content="Ключевые слова, и, фразы, через, запятую">
+	<meta name="description" content="Описание контента страницы, 1-2 предложения.">
+<!--ФАВИКОН-->
+	<link rel="icon" type="image/png" href="images/debian.png">
+<!--ПО ШИРИНЕ УСТРОИСТВА-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--FONT-AWESOME-->
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+<!--CSS-->
+	<link href="CSS/main.css" type="text/css" rel="stylesheet">
+<!--JQUERY-->
+	<script src="js/jquery-3.1.0.js"></script>
+	<script src="js/jquery.scrollify.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+<!--JAVASCRIPT-->
+	<script src="js/js.js"></script>
+	<script src="js/math.min.js" async></script>
+
+<script>	<!--ТЕРМИНАЛ-->
+	window.onload = function () {
+	var input = document.getElementById('input');
+	var output = document.getElementById('output');
+	window.calque = new Calque(input, output);
+	input.focus();}
+</script>
+
+<script async>	<!--ПРОЛИСТЫВАНИЕ-->
+	$(function() {
+	$.scrollify({
+	section : "section",
+	});
+	});
+</script>
+
+<script type="text/javascript">	<!--ПОЯВЛЕНИЕ БЛОКОВ В ПРАВО-->
+	jQuery(document).ready(function() {
+	jQuery('.elementanm').addClass("hidden").viewportChecker({
+	classToAdd: 'visible animated slideRight',
+	offset: 100
+});
+	jQuery('.elementanmTop').addClass("hidden").viewportChecker({
+	classToAdd: 'visible animated slideTop',
+	offset: 100
+});
+	jQuery('.elementanmRotate').addClass("hidden").viewportChecker({
+	classToAdd: 'visible animated slideRotate',
+	offset: 100
+});
+});
+</script>
+
+</head>
+<body onload="clockTimer();">				<!--BODY-->
+<p id="anchorName1"></p>					<!--ЯКОРЬ 1-->
+<section class="page1">						<!--СЕКЦИЯ 1-->
+    <div class="bg_page1"></div>			<!--ФОН ТОЧКА-->
+	<a class="mouse_scroll" href="#"></a>	<!--СКРОЛ СИМВОЛ-->
+    <p class="text1">Д О М О С Т Р О Е Н И Е<br>  <!--ГЛАВНАЯ НАДПИСЬ-->
+    	<span class="text2">панельно - каркасное</span></p>
+	<div style="clear: both;"></div>	<!--ОТМЕНА ОБТЕКАНИЙ-->
+</section>
+<p id="anchorName2"></p>	<!--ЯКОРЬ 2-->
+<section class="page2">		<!--СЕКЦИЯ 2-->
+	<header>		            	<!--ШАПКА САЙТА-->
+		<div id="button_terminal" onclick="Console_On_Off('terminal')">CONSOLE</div>
+    	<nav>	<!--МЕНЮ НАВИГАЦИЯ-->
+        	<ul>
+        		<li><a href="#anchorName1">HOME</a></li>
+        		<li><a href="#anchorName2">STANDART</a></li>
+        		<li><a href="#anchorName3">3D CAM</a></li>
+        		<li><a href="#anchorName4">WHITE</a></li>
+        		<li><a href="#anchorName5">CATEGORY</a></li>
+        	</ul>
+    	</nav>
+		<div class="wi-fi">			<!--WI-FI-->
+			<p id="wi-fi"> <i class="fa fa-wifi fa-2x" aria-hidden="true"></i> </p>
+		</div>
+		<div class="slider">	<!--БАТАРЕЯ-->
+			<p id="image_1"><i class="fa fa-battery-empty fa-2x" aria-hidden="true"></i></p>
+			<p id="image_2"><i class="fa fa-battery-quarter fa-2x" aria-hidden="true"></i></p>
+			<p id="image_3"><i class="fa fa-battery-half fa-2x" aria-hidden="true"></i></p>
+			<p id="image_4"><i class="fa fa-battery-three-quarters fa-2x" aria-hidden="true"></i></p>
+			<p id="image_5"><i class="fa fa-battery-full fa-2x" aria-hidden="true"></i></p>
+		</div>
+		<div class="digital_watch">	<!--ЧАСЫ-->
+			<div id="clock"></div>
+			<div id="dayOfWeek"></div>
+		</div>
+
+	<div id="terminal">	<!--TERMINAL-->
+		<div class="terminal_consol_output" id="output"></div>
+		<textarea class='terminal_consol_input' id='input' 
+			placeholder="Enter the commands :"></textarea>
+	</div>
+	</header>
+
+	<div class="wrapper">	<!--БОКОВЫЕ ПАНЕЛИ ASIDE & MAIN-->
+		<aside class="elementanmRotate">	<!--БОКОВАЯ ПАНЕЛЬ-->
+			<p class="name-box_gray">Sidbar</p>	<!--ЗАГОЛОВОК БОКОВОЙ ПАНЕЛИ-->
+			<form>	<!--ПОЛЯ КНОПКИ-->
+				<label class="txtar_1_lab" for="textarea"><i>First</i></label><br>
+					<textarea class='txtar_1' id='text_1' cols='20' rows='1' 
+					placeholder="enter" maxlength="9"></textarea><br>
+				<label class="txtar_1_lab" for="textarea"><i>Second</i></label><br>
+					<textarea class='txtar_1' id='text_2' cols='20' rows='1' 
+					placeholder="enter" maxlength="9"></textarea>
+				<p><button class="btn_aside" type="button" onclick="Test_1()">sum</button></p>
+				<p><button class="btn_aside" type="button" onclick="Test_2()">equal</button></p>
+				<p><button class="btn_aside" type="button" onclick="Test_3()">cycle</button></p>
+			</form>
+<center>
+<input type=button value="Новый документ" onClick="NewWin()">
+</center>
+		</aside>
+
+		<div class="main elementanmRotate">		<!--ОСНОВНОЙ КОНТЕНТ-->
+			<p class="name-box_blue">Main</p>	<!--ЗАГОЛОВОК ОСНОВНОЙ ПАНЕЛИ-->
+			<p id="ts"></p>		<!--ВЫВОД РЕЗУЛЬТАТА-->
+		</div>
+	</div>
+
+	<div id="sortable" class="example">		<!--ПРИМЕР ЦВЕТ-ФОН-->
+		<div id="black_red">Source code</div>
+		<div id="black_yellow">Source code</div>
+		<div id="black_green">Source code</div>
+		<div id="black_purple">Source code</div>
+		<div id="blue_white">Source code</div>
+		<div id="grey_dark">Source code</div>
+		<div id="ide_1">Source code</div>
+	</div>
+	<div style="clear: both;"></div>	<!--ОТМЕНА ОБТЕКАНИЙ-->
+</section>
+<p id="anchorName3"></p>	<!--ЯКОРЬ 3-->
+<section class="page3">		<!--СЕКЦИЯ 3-->
+	<div class="wrapper_2 elementanm">	<!--3D-->
+  		<div class="grid-wrap">
+    		<div class="grid anim"></div>
+  		</div>
+<!--
+    	<div class="hous">
+    		<div class="flat_1">Text</div>
+    	</div>
+-->   	
+	</div>
+
+	<div style="clear: both;"></div>	<!--ОТМЕНА ОБТЕКАНИЙ-->
+
+	<input class="open" id="top-box" type="checkbox" hidden>
+	<label class="btn" for="top-box"></label>
+	<div class="right_side_panel">	<!--ПРАВАЯ ПАНЕЛЬ-->
+		<div class="display_web">	<!--web_cam-->
+			<iframe width="500" height="300" frameborder="0" 
+			src="1http://www.gelendzhik.org:8080/vsaas/embed/platan_alleya?token=8ae6f219-8cff-4a70-9861-b495096e4397" ></iframe>
+		</div>
+    	<div class="display_sketch">	<!--ВИД 1-->
+    		<iframe id="sketch_1"
+    			src="https://sketchfab.com/models/8b0f70749b864f2bb606656c8b571c16/embed"></iframe>
+    		<iframe id="sketch_2"
+    			src="https://sketchfab.com/models/6089688888174b0eb7bb6d10aea578c6/embed"></iframe>
+    		<iframe id="sketch_3"
+    			src="https://sketchfab.com/models/6oYaWfk5gnNiLtqYwQrKX7L1NiG/embed"></iframe>
+    		<iframe id="sketch_4"
+    			src=""></iframe>
+    		<iframe id="sketch_5"
+    			src=""></iframe>
+    		<iframe id="sketch_6"
+    			src=""></iframe>
+		</div>
+    	<table class="button_box_view">	<!--КНОПКА ПРОСМОТРА 3Д -->
+			<tr>
+				<td><a id="btn_sketch_1">pp-1</a></td>
+				<td><a id="btn_sketch_2">pp-2</a></td>
+				<td><a id="btn_sketch_3">pp-3</a></td>
+			</tr>
+			<tr>
+				<td><a id="btn_sketch_4">ns-1</a></td>
+				<td><a id="btn_sketch_5">ns-2</a></td>
+				<td><a id="btn_sketch_6">ns-3</a></td>
+			</tr>
+		</table>
+	</div>
+	<div style="clear: both;"></div>	<!--ОТМЕНА ОБТЕКАНИЙ-->
+</section>
+<p id="anchorName4"></p>	<!--ЯКОРЬ 2-->
+<section class="page4">		<!--СЕКЦИЯ 2-->
+	<div class="wrapper-d_b-e_t_d elementanm">
+    <div class="description_buttons">	<!--ЛЕВЫЙ БЛОК-->
+        <div class="btn-descript" data-toggle-id="div1"><abbr title="basis panel">PO</abbr></div>
+        <div class="btn-descript" data-toggle-id="div2"><abbr title="external wall">NS</abbr></div>
+        <div class="btn-descript" data-toggle-id="div3"><abbr title="internal wall">VS</abbr></div>
+        <div class="btn-descript" data-toggle-id="div4"><abbr title="partition">P</abbr></div>
+        <div class="btn-descript" data-toggle-id="div5"><abbr title="overlapping panel">PP</abbr></div>
+        <div class="btn-descript" data-toggle-id="div6"><abbr title="roof panel">PK</abbr></div>
+    </div>
+    <div class="enter_the_data">	<!--ПАРАМЕТРЫ ДОМА-->
+    	<p class="name-box_gray">Enter the data</p>
+        <input class="txtar_2" type="number" 
+        	onchange="c()" id="wi" placeholder="building width"/>
+        <input class="txtar_2" type="number" 
+        	onchange="c()" id="len" placeholder="building length"/>
+        <input class="txtar_2" type="number" 
+        	onchange="c()" id="hei" placeholder="floor height"/>
+        <input class="txtar_2" type="number" 
+        	onchange="c()" id="flo" placeholder="number of floors"/>
+        <input class="txtar_2" type="number" 
+        	onchange="c()" id="ws" placeholder="length of internal walls"/>
+        <input class="txtar_2" type="number" 
+        	onchange="c()" id="p" placeholder="length of partitions"/>
+        <input class="txtar_2" type="number" 
+        	onchange="c()" id="k" placeholder="attic height"/>
+    </div>
+    </div>
+    <div id="div1" hidden>	<!--ОТКРЫВАЮЩИЙСЯ БЛОК 1-->
+        <form name="test" method="post" action="input1.php">
+            <p style="text-align: center"><b>FLOOR PANEL</b></p><br>
+            <input type="radio" name="panel" value="PO-1"><b> "PO-1"</b><br>
+            	<p><i>Description floor panel 1
+            	<p>Description floor panel 2
+            	<p>Description floor panel 3</i><br>
+            <input type="radio" name="pane2" value="PO-2"><b> "PO-2"</b><br>
+            	<p><i>Description floor panel 1
+            	<p>Description floor panel 2
+            	<p>Description floor panel 3</i><br>
+            <input type="radio" name="pane3" value="PO-3"><b> "PO-3"</b><br>
+            	<p><i>Description floor panel 1
+            	<p>Description floor panel 2
+            	<p>Description floor panel 3</i><br>
+            	<p id="button8" onClick="submit">
+            <button>choose</button></p>
+        </form>
+    </div>
+    <div id="div2" hidden>	<!--ОТКРЫВАЮЩИЙСЯ БЛОК 2-->
+        <form name="test" method="post" action="input1.php">
+            <p style="text-align: center"><b>EXTERNAL WALL</b></p><br>
+            <input type="radio" name="panel" value="NS-1"><b> "NS-1"</b><br>
+            	<p><i>Описание наружных стеновых панелей 1
+            	<p>Описание наружных стеновых панелей 2
+            	<p>Описание наружных стеновых панелей 3</i><br>
+            <input type="radio" name="pane2" value="NS-2"><b> "NS-2"</b><br>
+            	<p><i>Описание наружных стеновых панелей 1
+            	<p>Описание наружных стеновых панелей 2
+            	<p>Описание наружных стеновых панелей 3</i><br>
+            <input type="radio" name="pane3" value="NS-3"><b> "NS-3"</b><br>
+            	<p><i>Описание наружных стеновых панелей 1
+            	<p>Описание наружных стеновых панелей 2
+            	<p>Описание наружных стеновых панелей 3</i><br>
+            <p id="button8" onClick="submit">
+            <button>choose</button></p>
+        </form>
+    </div>
+    <div id="div3" hidden>	<!--ОТКРЫВАЮЩИЙСЯ БЛОК 3-->
+        <form name="test" method="post" action="input1.php">
+            <p style="text-align: center"><b>INTERNAL WALL</b></p><br>
+            <input type="radio" name="panel" value="VS-1"><b> "VS-1"</b><br>
+            	<p><i>Описание внутренних стеновых панелей 1
+            	<p>Описание внутренних стеновых панелей 2
+            	<p>Описание внутренних стеновых панелей 3</i><br>
+            <input type="radio" name="pane2" value="VS-2"><b> "VS-2"</b><br>
+            	<p><i>Описание внутренних стеновых панелей 1
+            	<p>Описание внутренних стеновых панелей 2
+            	<p>Описание внутренних стеновых панелей 3</i><br>
+            <input type="radio" name="pane3" value="VS-3"><b> "VS-3"</b><br>
+            	<p><i>Описание внутренних стеновых панелей 1
+            	<p>Описание внутренних стеновых панелей 2
+            	<p>Описание внутренних стеновых панелей 3</i><br>
+            <p id="button8" onClick="submit">
+            <button>choose</button></p>
+        </form>
+    </div>
+    <div id="div4" hidden>	<!--ОТКРЫВАЮЩИЙСЯ БЛОК 4-->
+        <form name="test" method="post" action="input1.php">
+            <p style="text-align: center"><b>PARTITION</b></p><br>
+            <input type="radio" name="panel" value="Р-1"><b> "Р-1"</b><br>
+            	<p><i>Описание перегородок 1
+            	<p>Описание перегородок 2
+            	<p>Описание перегородок 3</i><br>
+            <input type="radio" name="pane2" value="Р-2"><b> "Р-2"</b><br>
+            	<p><i>Описание перегородок 1
+            	<p>Описание перегородок 2
+            	<p>Описание перегородок 3</i><br>
+            <input type="radio" name="pane3" value="Р-3"><b> "Р-3"</b><br>
+            	<p><i>Описание перегородок 1
+            	<p>Описание перегородок 2
+            	<p>Описание перегородок 3</i><br>
+            <p id="button8" onClick="submit">
+            <button>choose</button></p>
+        </form>
+    </div>
+    <div id="div5" hidden>	<!--ОТКРЫВАЮЩИЙСЯ БЛОК 5-->
+        <form name="test" method="post" action="input1.php">
+            <p style="text-align: center"><b>OVERLAPPING PANEL</b></p><br>
+            <input type="radio" name="panel" value="РР-1"><b> "РР-1"</b><br>
+            	<p><i>Описание панелей перекрытия 1
+            	<p>Описание панелей перекрытия 2
+            	<p>Описание панелей перекрытия 3</i><br>
+            <input type="radio" name="pane2" value="РР-2"><b> "РР-2"</b><br>
+            	<p><i>Описание перегородок 1
+            	<p>Описание перегородок 2
+            	<p>Описание перегородок 3</i><br>
+            <input type="radio" name="pane3" value="РР-3"><b> "РР-3"</b><br>
+            	<p><i>Описание панелей перекрытия 1
+            	<p>Описание панелей перекрытия 2
+            	<p>Описание панелей перекрытия 3</i><br>
+            <p id="button8" onClick="submit">
+            <button>choose</button></p>
+        </form>
+    </div>
+    <div id="div6" hidden>	<!--OТКРЫВАЮЩИЙСЯ БЛОК 6-->
+        <form name="test" method="post" action="input1.php">
+            <p style="text-align: center"><b>ROOF PANEL</b></p><br>
+            <input type="radio" name="panel" value="РК-1"><b> "РК-1"</b><br>
+            	<p><i>Описание панелей кровли 1
+            	<p>Описание панелей кровли 2
+            	<p>Описание панелей кровли 3</i><br>
+            <input type="radio" name="pane2" value="РК-2"><b> "РК-2"</b><br>
+            	<p><i>Описание панелей кровли 1
+            	<p>Описание панелей кровли 2
+            	<p>Описание панелей кровли 3</i><br>
+            <input type="radio" name="pane3" value="РК-3"><b> "РК-3"</b><br>
+            	<p><i>Описание панелей кровли 1
+            	<p>Описание панелей кровли 2
+            	<p>Описание панелей кровли 3</i><br>
+            <p id="button8" onClick="submit">
+            <button>choose</button></p>
+        </form>
+    </div>
+    <div class="btn-white-submit" data-toggle-id="out_inf">Submit</div>	<!--КНОПКА РЕЗУЛЬТАТА-->
+    <div id="out_inf" hidden>									<!--РЕЗУЛЬТАТ-->
+    	<h2 style="color: inherit">Data construction kit</h2><br>
+        <p class="fon_text">Area of panels of a floor :
+            <output id="in1"></output>
+        <p class="fon_text"> Area of panels of external walls :
+            <output id="in2"></output>
+        <p class="fon_text"> Area of panels of internal walls :
+            <output id="in3"></output>
+        <p class="fon_text">Area of panels of partitions :
+            <output id="in4"></output>
+        <p class="fon_text">Area of panels of overlapping :
+            <output id="in5"></output>
+        <p class="fon_text">Area of panels of a roof :
+            <output id="in6"></output></p>
+        <p class="fon_text"> PRICE :
+            <output id="in7"></output></p>
+    </div>
+</section>
+<p id="anchorName5"></p>		<!--ЯКОРЬ 4-->
+<section class="page5">			<!--СЕКЦИЯ 4-->
+	<div class="category_wrp elementanmTop">	<!--КАТЕГОРИЯ ВЫБОРА РАЗДЕЛА-->
+		<div id="nature">
+			<div id="nature_c"><span class="s1">NATURE</span></div>
+			<div id="nature_l"><span class="s1">NATURE</span></div>
+			<div id="nature_t"><span class="s1">NATURE</span></div>
+			<div id="nature_r"><span class="s1">NATURE</span></div>
+		</div>
+		<div id="home">
+			<div id="home_c"><span class="s1">HOME</span></div>
+			<div id="home_l"><span class="s1">HOME</span></div>
+			<div id="home_t"><span class="s1">HOME</span></div>
+			<div id="home_r"><span class="s1">HOME</span></div>
+		</div>
+		<div id="sculpture">
+			<div id="sculpture_c"><span class="s1">SCULPTURE</span></div>
+			<div id="sculpture_l"><span class="s1">SCULPTURE</span></div>
+			<div id="sculpture_t"><span class="s1">SCULPTURE</span></div>
+			<div id="sculpture_r"><span class="s1">SCULPTURE</span></div>
+		</div>
+		<div id="art">
+			<div id="art_c"><span class="s1">ART</span></div>
+			<div id="art_l"><span class="s1">ART</span></div>
+			<div id="art_t"><span class="s1">ART</span></div>
+			<div id="art_r"><span class="s1">ART</span></div>
+		</div>
+		<div id="weapon">
+			<div id="weapon_c"><span class="s1">WEAPON</span></div>
+			<div id="weapon_l"><span class="s1">WEAPON</span></div>
+			<div id="weapon_t"><span class="s1">WEAPON</span></div>
+			<div id="weapon_r"><span class="s1">WEAPON</span></div>
+		</div>
+
+		<div id="but_nature_1" onclick="rot_box_nature_1();">Click 1</div>
+		<div id="but_nature_2" onclick="rot_box_nature_2();">Click 2</div>
+		<div id="but_nature_3" onclick="rot_box_nature_3();">Click 3</div>
+		<div id="but_nature_4" onclick="rot_box_nature_4();">Click 4</div>
+
+		<div id="but_home_1" onclick="rot_box_home_1();">Click 1</div>
+		<div id="but_home_2" onclick="rot_box_home_2();">Click 2</div>
+		<div id="but_home_3" onclick="rot_box_home_3();">Click 3</div>
+		<div id="but_home_4" onclick="rot_box_home_4();">Click 4</div>
+
+		<div id="but_sculpture_1" onclick="rot_box_sculpture_1();">Click 1</div>
+		<div id="but_sculpture_2" onclick="rot_box_sculpture_2();">Click 2</div>
+		<div id="but_sculpture_3" onclick="rot_box_sculpture_3();">Click 3</div>
+		<div id="but_sculpture_4" onclick="rot_box_sculpture_4();">Click 4</div>
+
+		<div id="but_art_1" onclick="rot_box_art_1();">Click 1</div>
+		<div id="but_art_2" onclick="rot_box_art_2();">Click 2</div>
+		<div id="but_art_3" onclick="rot_box_art_3();">Click 3</div>
+		<div id="but_art_4" onclick="rot_box_art_4();">Click 4</div>
+
+		<div id="but_weapon_1" onclick="rot_box_weapon_1();">Click 1</div>
+		<div id="but_weapon_2" onclick="rot_box_weapon_2();">Click 2</div>
+		<div id="but_weapon_3" onclick="rot_box_weapon_3();">Click 3</div>
+		<div id="but_weapon_4" onclick="rot_box_weapon_4();">Click 4</div>
+	</div>
+	<footer>						<!--ПОДВАЛ-->
+		<div class="social_link">	<!--СОЦИАЛЬНЫЕ ИКОНКИ-->
+			<a class="link" href="https://www.linkedin.com">
+				<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+			<a class="git" href="https://github.com">
+				<i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+			<a class="you" href="https://www.youtube.com">
+				<i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+		</div>
+	</footer>
+</section>
+</body>
+</html>
+

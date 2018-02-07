@@ -1,0 +1,56 @@
+/*---локальная палитра-----------------------------*/
+$color-white: #fff;             /*белый для всего*/
+$color-gray_white_vk: #edeef0;     /*out_inf*/
+$color-gray_text_shadow: #ccc;  /* тень текста для textarea_home_1*/
+$color-gray_text: #969696;      /*цвет текста кнопок правой боковой панели*/
+$color-gray_type_1: #707276;    /*бордер для блока белого+текст*/
+$color-gray_type_2: #4c4f54;    /*фон для блока белого*/
+$color-graygreen: #434e56;      /* фон кнопки примера с бел текстом*/
+$color-gray_light: #4b4b4b;     /*кнопка в нажатом состоянии*/
+$color-gray_dark: #3a3a3a;      /*footer social link / фон сайдбара*/
+$color-gray_dark_max: #282828;  /*footer social link / фон сайдбара*/
+$color-gray_main: #242424;      /* фон хедера и кнопкпи терминала*/
+$color-gray_main_dark: #121212;      /* круглая кнопка */
+$color-red: #f44336;            /*кнопка правой боковой панели*/
+$color-green: #48A65B;          /*часы текст*/
+$color-pink: #ff007e;           /*none*/
+$color-purple: #812991;	        /*фиолетовый на черном*/
+$color-yellow: #f90;            /*подсветка текста*/
+$color-blue: blue;              /*тест для сине белого*/
+$color-blue_dark: #2d7091;      /*текст для синебелого парам дома */
+$color-blue_light: #66afe9;     /*рамка текстового поля свечение*/
+$color-Blue_White: #3dc0f1;     /*синий для белого сайта*/
+$color-turquoise: #30D5C8;      /* основной бирюза*/
+
+/*---миксины---*/
+@mixin user-select-none($status) {
+	user-select: $status;
+	-webkit-user-select: $status;
+	-moz-user-select: $status;
+}
+
+/*---глобальная палитра-----------------------------*/
+$bg-header-footer: $color-gray_type_2;
+$bg-aside: $color-gray_type_1;
+$bg-main: $color-Blue_White;
+
+$bg-page_white: $color-white;
+$bg-page_category: $color-gray_type_1;
+$bg-page_standart: $color-gray_white_vk;
+
+$bg-textarea_test: $color-gray_dark_max;
+	/*menu*/
+$menu-norm: $color-turquoise;
+$menu-hover: $color-green;
+$menu-active: $color-yellow;
+	/*terminal*/
+$term-btn-txt: $color-turquoise;
+$term-btn-txt_hover: $color-white;
+$term-btn-bord: $color-turquoise;
+$term-btn-bg_hover: $color-turquoise;
+$term-consol-bg: $color-turquoise;
+$term-consol-txt_in: $color-white;
+$term-consol-txt_ou: $color-blue;
+	/*white*/
+$wrap_white-bg: $color-gray_type_2;
+$wrap_white-bord: $color-gray_type_1;

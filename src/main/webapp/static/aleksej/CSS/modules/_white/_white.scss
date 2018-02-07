@@ -1,0 +1,94 @@
+/*---ОБВЕРТКА ДЛЯ КНОПОК И ВВОДА ДАННЫХ ДОМА ------------------------------*/
+.wrapper-d_b-e_t_d {
+	height: 550px;
+	width: 390px;
+	position: relative;
+	top: 100px;
+	left: 50px;
+	float: left;
+}
+/*---КРУГЛЫЕ КНОПКИ ВЫБОРА ПАНЕЛЕЙ------------------------------------------*/
+.description_buttons {
+	height: 550px;
+	width: 90px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	float: left;
+	background: $color-white;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+/*---ВВОД ДАННЫХ ДОМОКОМПЛЕКТА-----------------------------------------------*/
+.enter_the_data {
+	height: 550px;
+	width: 300px;
+	position: relative;
+	top: 0px;
+	float: left;
+	background: $wrap_white-bord;
+	border-radius: 0 10px 10px 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+/*---ЗАГОЛОВОК ВВОДА ДАННЫХ ДОМОКОМПЛЕКТА-----------------------*/
+.name-box_gray {
+	color: $color-gray_type_2;
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 30px;
+}
+/*---ЗАГОЛОВОК ВЫВОДА ДАННЫХ ДОМОКОМПЛЕКТА-----------------------*/
+.name-box_blue {
+	color: $color-white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 30px;
+}
+
+/*---ВЫВОД ДАННЫХ ДОМОКОМПЛЕКТА-----------------------*/
+#out_inf {
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	left: 450px;
+	top: 200px;
+	background: $color-Blue_White;
+	border-radius: 5px;
+	line-height: 40px;
+	color: $color-white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	text-align: left;
+	padding-left: 50px;
+	padding-top: 50px;
+	font-size: 110%;
+	@include user-select-none(none);
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+/*---ВЫВОД ДАННЫХ ДОМОКОМПЛЕКТА (ЧИСЛОВОЙ)-----------------------*/
+#in1, #in2, #in3, #in4, #in5, #in6 {
+	float: right;
+	margin-right: 20px;
+	color: $color-blue_dark;
+	font-size: 110%;
+}
+/*---ПАНЕЛИ С ИНФОРМАЦИЕЙ-----------------------------------*/
+#div1, #div2, #div3, #div4, #div5, #div6 {
+	width: 400px;
+	height: 500px;
+	position: relative;
+	right: 0px;
+	top: 100px;
+	background: $color-white;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	float: right;
+	padding-left: 50px;
+	padding-top: 50px;
+	color: #3dc0f1;
+	line-height: 30px;
+	font-size: 18px;
+	transition: 1s ease-out 0.5s;
+}

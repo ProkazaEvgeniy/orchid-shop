@@ -1,0 +1,74 @@
+/*===MOUSE SCROLL ICON======================================================================*/
+/*
+.mouse_scroll, .mouse_scroll:hover {
+	-moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.mouse_scroll_row {position: relative;}
+.mouse_scroll {
+	display: block;
+	position: relative;
+	z-index: 2;
+	width: 30px;
+	height: 50px;
+	background: none;
+	border-radius: 14px;
+	border: 2px #C0C0C0 solid;
+	position: absolute;
+	left: 5%;
+	top: 100px;
+	margin-left: -14px;
+}
+.mouse_scroll:hover {border-color: #f90;}
+.mouse_scroll:before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 11px;
+	width: 4px;
+	height: 4px;
+	border: 2px #f90 solid;
+	border-radius: 4px;
+	-webkit-animation: scrollanimation 2s 5;
+	-moz-animation: scrollanimation 2s 5;
+	-ms-animation: scrollanimation 2s 5;
+	-o-animation: scrollanimation 2s 5;
+	animation: scrollanimation 2s 5;
+}
+@-moz-keyframes scrollanimation {
+	0% {height: 5px;}
+	50% {height: 24px;}
+	100% {height: 5px;}
+}
+@-webkit-keyframes scrollanimation {
+	0% {height: 5px;}
+	50% {height: 24px;}
+	100% {height: 5px;}
+}
+@keyframes scrollanimation {
+	0% {height: 5px;}
+	50% {height: 24px;}
+	100% {height: 5px;}
+}
+/*---SCROL-------------------------------------------------*/
+/*
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-thumb{
+	border-width:1px 1px 1px 2px;
+	border-color: #969696;
+	background-color: #969696;
+}
+::-webkit-scrollbar-thumb:hover{
+	border-width: 1px 1px 1px 2px;
+	border-color: #4b4b4b;
+	background-color: red;
+}
+::-webkit-scrollbar-track{
+	border-width:0;
+}
+::-webkit-scrollbar-track:hover{
+	border-left: solid 1px #969696;
+	background-color: #ccc;
+}*/

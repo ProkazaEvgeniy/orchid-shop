@@ -1,0 +1,30 @@
+<!DOCTYPE xml>
+<beans>
+	<bean id="restoreAccessNotification" class="net.www.orchid.model.NotificationMessage">
+        <property name="subject" value="Restore access" />
+        <property name="content">
+        	<value>Чтобы восстановить доступ, пожалуйста, нажмите на ${restoreLink}.</value>
+        </property>
+    </bean>
+    
+    <bean id="passwordChangedNotification" class="net.www.orchid.model.NotificationMessage">
+        <property name="subject" value="Password changed" />
+        <property name="content">
+        	<value>Это письмо, чтобы уведомить вас, что пароль для вашей учетной записи ${profile.uid} был изменен.</value>
+        </property>
+    </bean>
+    
+    <bean id="passwordGeneratedNotification" class="net.www.orchid.model.NotificationMessage">
+        <property name="subject" value="Password generated" />
+        <property name="content">
+        	<value>Новый пароль для учетной записи. Ваши учетные данные: login=${profile.uid}, password=${generatedPassword}</value>
+        </property>
+    </bean>
+    
+     <bean id="orderMessageNotification" class="net.www.orchid.model.NotificationMessage">
+        <property name="subject" value="Order message" />
+        <property name="content">
+        	<value>Заказ оформлен, его можно просмотреть по ссылке: ${orderLink}</value>
+        </property>
+    </bean>
+</beans>

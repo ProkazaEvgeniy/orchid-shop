@@ -1,0 +1,20 @@
+/*Анимация вправо*/
+.slideRotate{
+    animation-name: slideRotate;
+    -webkit-animation-name: slideRotate; 
+    animation-duration: 2s; 
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+    visibility: visible !important; 
+}
+@keyframes slideRotate {
+0% {transform: rotateY(90deg);}
+100% {transform: rotateY(0deg);}   
+}
+@-webkit-keyframes slideRotate {
+0% {-webkit-transform: rotateY(90deg);}
+100% {-webkit-transform: rotateY(90deg);}
+}
+.hidden{opacity:0;}
+.visible{opacity:1;}

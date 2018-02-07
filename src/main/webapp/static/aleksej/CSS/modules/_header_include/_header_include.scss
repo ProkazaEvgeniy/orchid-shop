@@ -1,0 +1,84 @@
+/*---МЕНЮ------------------------------------------------------*/
+nav {
+	height: 78px;
+	width: 650px;
+	position: relative;
+	left: 100px;
+	/*border: 1px solid red;*/
+}
+ul li {
+	display: inline;
+	list-style: none;
+	float: left;
+}
+li a {
+	text-align: center;
+	font-size: 18px;
+	padding:  28px 15px;
+	color: $menu-norm;
+	font-weight: bold;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	border: 1px solid transparent;
+	line-height: 80px;
+}
+li a:hover {
+	border-left: 1px solid $menu-hover;
+	border-right: 1px solid $menu-hover;
+	background: #3a3a3a;
+	color: $menu-hover;
+	text-decoration: none;
+}
+li a:active{
+	transition: .2s linear;
+	color: $menu-active;
+}
+/*---WI-FI/SLIDER-----------------------------------------------*/
+.wi-fi, .slider{
+	height: 80px;
+	width: 50px;
+	position: absolute;
+	top: 5px;
+	float: right;
+	text-align: center;
+	color: #3a3a3a;
+}
+.wi-fi{
+	right: 230px;
+	line-height: 80px;
+}
+.slider{right: 160px;}
+
+#image_1, #image_2,#image_3, #image_4, #image_5{
+	position: absolute;
+	top: 0px;
+	line-height: 80px;
+}
+/*---ЧАСЫ---------------------------------------------*/
+.digital_watch{
+	height: 80px;
+	width: 120px;
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	float: right;
+	color: $color-green;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	text-align: center;
+}
+#clock{
+	height: 50px;
+	font-size: 30px;
+	font-family: 'OpenSans-Light', sans-serif;
+	border-bottom: 1px solid $color-green;
+	line-height: 55px;
+}
+#dayOfWeek{
+	height: 30px;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 9px;
+	line-height: 25px;
+}

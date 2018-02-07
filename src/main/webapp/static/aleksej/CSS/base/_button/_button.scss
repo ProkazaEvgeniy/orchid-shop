@@ -1,0 +1,71 @@
+/*---КНОПКИ РАСЧЕТА ДЖАВА СКРИПТА---------------------*/
+.btn_aside{
+	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	transition: all .2s;
+	color: $color-white;
+	text-transform: uppercase;
+	background-color: $color-gray_text;
+	border-color: transparent;
+	cursor: pointer;
+	border-radius: 3px;
+	height: 30px;
+	width: 100px;
+	margin: 5px;
+}
+.btn_aside:focus{
+	outline: none;
+	box-shadow: inset 1px 1px 2px rgba(0,0,0,.3);
+	background-color: $color-gray_type_1;
+	color: $color-purple;	
+}
+/*---КНОПКИ ПОКАЗА ОПИСАНИЯ ПАНЕЛЕЙ-----------------*/
+.btn-descript {
+	width: 70px;
+	height: 70px;
+	background: $color-Blue_White;
+	border: 1px solid $color-Blue_White;
+	border-radius: 35px;
+	color: $color-white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	font-size: 25px;
+	text-align: center;
+	line-height: 70px;
+	text-decoration: none;
+	@include user-select-none(none);
+	float: left;
+	margin: 10px;
+	transition: 0.3s linear;
+	cursor: pointer;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.btn-descript:hover {
+	background: $color-gray_white_vk;
+	color: $color-Blue_White;
+}
+/*---КНОПКА ВЫВОДА РЕЗУЛЬТАТА---------------------------------------*/
+.btn-white-submit {
+	height: 50px;
+	width: 100px;
+	position: relative;
+	top: 100px;
+	left: 230px;
+	color: white;
+	background-color: #3dc0f1;
+	border: 1px solid #3dc0f1;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+	@include user-select-none(none);
+	line-height: 50px;
+	font-size: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	float: left;
+	cursor: pointer;
+}
+.btn-white-submit:hover {
+	background-color: #edeef0;
+	border: 1px solid #3dc0f1;
+	color: #3dc0f1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	transition: 0.3s linear;
+}

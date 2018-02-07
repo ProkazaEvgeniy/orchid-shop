@@ -1,0 +1,65 @@
+/*---TERMINAL--------------------------------------------------------*/
+#button_terminal {
+	height: 40px;
+	width: 100px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	float: left;
+	border: 2px solid $term-btn-bord;
+	background: transparen;
+	color: $term-btn-txt;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+#button_terminal:hover{
+	background: $term-btn-bg_hover;
+	color: $term-btn-txt_hover;
+	transition: .3s linear;
+}
+#terminal{
+	height: 300px;
+	width: 500px;
+	background-color: $term-consol-bg;
+	left: 0px;
+	top: 82px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.8);
+	z-index: 2;
+	display: none;
+	z-index: 2;
+	clear: both;
+}
+.terminal_consol_input{
+	height: 300px;
+	width: 350px;
+	position: absolute;
+	top: 82px;
+	left: 50px;
+	border: none;
+	outline: none;
+	background: none;
+	resize: none;
+	color: $term-consol-txt_in;
+	line-height: 1.6;
+	font-size: 15px;
+	text-align: left;
+}
+.terminal_consol_output{
+	height: 300px;
+	width: 430px;
+	position: absolute;
+	top: 82px;
+	left: 50px;
+	color: $term-consol-txt_ou;
+	line-height: 1.6;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: right;
+}
+/*плейсхолдер*/
+#input::-webkit-input-placeholder {color:white;}
+#input::-moz-placeholder          {color:white;}/* Firefox 19+ */
+#input:-moz-placeholder           {color:white;}/* Firefox 18- */
+#input:-ms-input-placeholder      {color:white;}
