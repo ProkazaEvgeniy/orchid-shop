@@ -18,13 +18,18 @@
 				<hr> 
 				<span class="btn-group btn-group-justified"> 
 				<a href="/details?id=${product.id }" class="btn btn-default btn-sm">Details</a> 
-				<a href="/compare?id=${product.id }" class="btn btn-default btn-sm">Compare</a> 
 				<!-- 
+				<a href="/compare?id=${product.id }" class="btn btn-default btn-sm">Compare</a> 
 								
 				--> 
 				<a href="/admin/edit-product?id=${product.id }" class="btn btn-default btn-sm">Edit</a>
 				</span>
 			</span>
+			<label class="action action--compare-add">
+				<input class="check-hidden" type="checkbox" />
+				<i class="fa fa-plus"></i><i class="fa fa-check"></i>
+				<span class="action__text action__text--invisible">Добавить для сравнения</span>
+			</label>
 		</div>
 	</div>
 </c:forEach>

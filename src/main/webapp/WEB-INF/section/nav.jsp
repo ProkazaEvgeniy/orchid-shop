@@ -37,6 +37,13 @@
 		</ul>
 		<ul class="nav navbar-nav navbar-right navbar-user">
 			<li>
+			<div class="compare-basket">
+				<button class="action action--button action--compare">
+					<i class="fa fa-check"></i><span class="action__text">Сравнить</span>
+				</button>
+			</div>
+			</li>
+			<li>
 				<form class="navbar-search">
 					<input type="text" placeholder="Search" class="form-control">
 				</form>
