@@ -1,17 +1,8 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2015, Codrops
- * http://www.codrops.com
- */
-(function() {
+$(function() {
 
 	var viewEl = document.querySelector('.view'),
-		items = [].slice.call(viewEl.querySelectorAll('.product')),
+		gridEl = viewEl.querySelector('.grid'),
+		items = [].slice.call(gridEl.querySelectorAll('.product')),
 		basket;
 
 	// the compare basket
@@ -21,7 +12,7 @@
 		this.compareWrapper = document.querySelector('.compare'),
 		this.closeCompareCtrl = this.compareWrapper.querySelector('.action--close')
 		
-		this.itemsAllowed = 2;
+		this.itemsAllowed = 3;
 		this.totalItems = 0;
 		this.items = [];
 

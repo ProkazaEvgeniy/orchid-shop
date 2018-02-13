@@ -14,23 +14,14 @@ img:hover {
 	/* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
-.product .price {
-	position: absolute;
-	left: 16px;
-	top: -15px;
-	background: #c0c0c0;
-	font-size: 12pt;
-	color: #000000;
-	font-weight: bold;
-	padding: 5px 10px 5px 5px;
-	-webkit-border-bottom-right-radius: 10px;
-	-moz-border-bottom-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
-	-moz-border-top-right-radius: 10px;
-	border-top-right-radius: 10px;
-}
 
+
+.size-orchid {
+	white-space: nowrap; /* Отменяем перенос текста */
+	overflow: hidden; /* Обрезаем содержимое */
+	padding: 5px; /* Поля */
+	text-overflow: ellipsis; /* Многоточие */
+}
 /*---------------------------------------*/
 
 .view {
@@ -88,8 +79,26 @@ img:hover {
 	min-width: 16em;
 	margin: 0 1em 2.5em;
 	padding: 1.5em 1.5em 2em;
-	background: #24252A;
+	background: #232323;
 	border-radius: 5px;
+}
+
+.price {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	background: #c0c0c0;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: bold;
+	padding: 5px 10px 5px 5px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .product--selected {
@@ -302,7 +311,7 @@ img:hover {
 	color: #ddd;
 	position: absolute;
 	top: -8px;
-	right: 4px;
+	right: -8px;
 }
 
 .action--compare-add:hover .action__text--invisible {
@@ -413,7 +422,7 @@ img:hover {
 	overflow: hidden;
 	top: 0;
 	left: 0;
-	z-index: 1001;
+	z-index: 1100;
 	-webkit-transition: height 0s 0.4s;
 	transition: height 0s 0.4s;
 }
@@ -659,12 +668,3 @@ img:hover {
 	}
 }
 
-
-
-
-.size-orchid {
-	white-space: nowrap; /* Отменяем перенос текста */
-	overflow: hidden; /* Обрезаем содержимое */
-	padding: 5px; /* Поля */
-	text-overflow: ellipsis; /* Многоточие */
-}

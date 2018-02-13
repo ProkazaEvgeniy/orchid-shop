@@ -13,7 +13,7 @@
 	
 <!-- you need to include the shieldui css and js assets in order for the charts to work -->
 
-	<link rel="stylesheet" 	type="text/css" 	href="/static/css/light-bootstrap/all.min.css" />
+	<link rel="stylesheet" 						type="text/css" href="/static/css/light-bootstrap/all.min.css" />
 	<link id="gridcss" 		rel="stylesheet" 	type="text/css" href="/static/css/dark-bootstrap/all.min.css" />
 	<link id="gridcss" 		rel="stylesheet" 	type="text/css" href="/static/css/app.css" />
-	<link rel="stylesheet" 	href="/static/css/fileinput-4.3.2.css">
+	<link rel="stylesheet" 										href="/static/css/fileinput-4.3.2.css">

@@ -11,7 +11,7 @@
 	<script src="/static/aleksej/js/jquery.easing.min.js"></script>
 	<script src="/static/aleksej/js/jquery-ui.js"></script>
 <!--JAVASCRIPT-->
-	<script src="/static/aleksej/js/js.js"></script>
+	
 	<script src="/static/aleksej/js/math.min.js" async></script>
 
 	<script src="/static/js/jquery-1.10.2.min.js"></script>
@@ -19,3 +19,6 @@
 	<script src="/static/js/bootstrap.min.js"></script>
 	<script src="/static/js/shieldui-all.min.js"></script>
 	<script src="/static/js/gridData.js"></script>
+	
+<!-- Modernizr -->
+	<script src="/static/js/modernizr.custom.js"></script>

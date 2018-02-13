@@ -9,4 +9,5 @@
 <script src="/static/aleksej/js/jquery-ui.js"></script>
 
 <script src="/static/js/fileinput-4.3.2.js"></script>
+<script src="/static/js/classie.js"></script>
 <script src="/static/js/app-from-wn.js"></script>

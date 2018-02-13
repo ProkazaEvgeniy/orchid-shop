@@ -27,7 +27,7 @@ public class Constants {
 	}
 	
 	public static class UI {
-		public static final int MAX_PRODUCTS_PER_PAGE = 2;
+		public static final int MAX_PRODUCTS_PER_PAGE = 4;
 		public static final int ORDERS_PER_PAGE = 5;
 	}
 }
